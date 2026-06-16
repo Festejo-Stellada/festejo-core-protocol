@@ -1,15 +1,12 @@
 [package]
-name = "festejo-core-rust"
+name = "festejo-rust-core"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "festejo_core_rust"
+name = "festejo_rust_core"
 crate-type = ["cdylib"]
 
 [dependencies]
+festejo-frsp = { path = "../../festejo-frsp" }
 pyo3 = { version = "0.20", features = ["extension-module"] }
-sha2 = "0.10"
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-lazy_static = "1.4"
